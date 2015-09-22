@@ -45,7 +45,8 @@
                 <dd>Nokkloomad on <i>imelikud ja toredad</i>. Vaata pilti!</dd>
             </dl>
             <img src="http://www.slate.com/content/dam/slate/articles/health_and_science/wild_things/2015/06/150622_WILD_Platypus.jpg.CROP.promo-mediumlarge.jpg" alt="nokkloom">
-            <table>
+            <br>
+            <table id="fancyinfo">
                 <caption>Nokkloomad!</caption>
                 <colgroup>
                     <col style="background-color: blue; width: 20%">
@@ -90,8 +91,10 @@
                 <li><b>Üliägedad!</b></li>
                 <li><sub>Kõige</sub> <sup>ägedamad!</sup></li>
                 <li><samp>nokkloom === äge <small>is</small> <b>true</b></samp></li>
-                <li><var>äge</var> + <var>ägedam</var> = <var>nokkloom</var></li>
+                <li><var>äge</var> + <var>ägedam</var> = <output>nokkloom</output></li>
                 <li>Väga <del>ohtlikud</del><ins>ägedad</ins></li>
+                <li><progress value="99" max="100">99% ägedad</progress></li>
+                <li>Äge väärtus on <meter low="0" high="9000" max="10000" value="9001">üle 9000</meter></li>
             </ul>
         </section>
         <hr>
@@ -182,6 +185,51 @@
                         Taken from <cite><a href="http://www.poemhunter.com/poem/the-diplomatic-platypus/">PoemHunter<wbr>.com</a></cite>.
                     </address>
                 </article>
+            </div>
+            <div id="form">
+                <form action="" method="post">
+                    <fieldset name="userinfo">
+                        <legend>Kasutaja info</legend>
+                        <div>
+                            <label for="name">Nimi:</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" />
+                        </div>
+                        <div>
+                            <label for="country">Riik:</label>
+                            <datalist id="country">
+                                <option value="Austraalia">
+                                <option value="Eesti">
+                                <option value="Hispaania">
+                            </datalist>
+                        </div>
+                        <keygen name="key">
+                    </fieldset>
+                    <div>
+                        <label for="choice">Lemmikloom:</label>
+                        <select id="choice">
+                            <optgroup label="Õiged vastused">
+                                <option>Nokkloom</option>
+                                <option>Nokkloom!</option>
+                                <option>Nokkloom!!</option>
+                            </optgroup>
+                            <optgroup label="Teised vastused">
+                                <option>Laiskloom</option>
+                                <option>Kilpkonn</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Sõnum:</label>
+                        <textarea id="message">Kui sul on midagi veel öelda, siis kirjuta siia!</textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Valmis!</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
