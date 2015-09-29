@@ -1,0 +1,21 @@
+h1 {
+    color: #8b0000;
+    font-family: sans-serif;
+    font-kerning: auto;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+footer > p {
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    letter-spacing: -0.05em;
+    text-decoration: underline red;
+}
+
+u {
+    display: inline-block;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
