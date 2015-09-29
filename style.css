@@ -7,7 +7,7 @@ h1 {
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
 }
 
-section {
+.knowledge {
     border-color: blueviolet;
     border-width: thin;
     border-style: dotted;
@@ -15,6 +15,15 @@ section {
     padding-left: 10%;
     max-width: 45%;
     min-width: 30%;
+    overflow: scroll;
+}
+
+#where {
+    float: left;
+}
+
+#what {
+    float: right;
 }
 
 footer > p {
