@@ -12,6 +12,9 @@ section {
     border-width: thin;
     border-style: dotted;
     border-radius: 15px;
+    padding-left: 10%;
+    max-width: 45%;
+    min-width: 30%;
 }
 
 footer > p {
