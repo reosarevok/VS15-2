@@ -5,6 +5,59 @@ h1 {
     font-style: italic;
     font-weight: 700;
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    text-align: center;
+}
+
+del {
+    opacity: 0.5;
+}
+
+ol {
+    list-style-image: url(http://rlv.zcache.com/platypus_giving_thumbs_up_cartoon_perfect_poster-rcebe1098c1bb482ea98ad2b74d46ff89_ilb22_16.jpg);
+    list-style-position: inside;
+}
+
+nav {
+    background-image: url(http://platypus.fi/img/1413727023_99P8kd6.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-origin: inherit;
+    background-size: 300px;
+}
+
+nav ul {
+    border: 1px solid #133e40;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: larger;
+    list-style-type: none;
+}
+
+nav ul:before {
+    content: '';
+    display: block;
+}
+nav ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+nav li {
+    float: left;
+    margin: 0 5px 0 0;
+    border: 1px solid transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav ul a {
+    border-radius: 5px;
+    padding: 8px 15px 9px 15px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid transparent;
+    font-size: 16px;
 }
 
 .knowledge {
@@ -12,18 +65,73 @@ h1 {
     border-width: thin;
     border-style: dotted;
     border-radius: 15px;
-    padding-left: 10%;
-    max-width: 45%;
-    min-width: 30%;
-    overflow: scroll;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 50%;
+    background-color: antiquewhite;
 }
 
 #where {
+    width: 35%;
+    max-height: 70%;
     float: left;
+    margin-left: 5%;
+}
+
+#howcool {
+    min-width: 25%;
+    max-width: 35%;
+    height: 400px;
+    float: right;
+    margin-right: 5%;
+    padding-bottom: 30px;
+}
+
+#howcool > img {
+    display: block;
+    margin: 0 auto;
+}
+
+#floaties {
+    overflow: hidden;
 }
 
 #what {
-    float: right;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    max-width: 60%;
+    display: block;
+    padding-bottom: 10px;
+}
+
+#fancyinfo {
+    /*Pointless but we should use them all so...*/
+    border-bottom-color: darkgreen;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-style: groove;
+    border-bottom-width: medium;
+    border-top-color: darkgreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-style: groove;
+    border-top-width: medium;
+    border-right-color: darkgreen;
+    border-right-style: groove;
+    border-right-width: medium;
+    border-left-color: darkgreen;
+    border-left-style: groove;
+    border-left-width: medium;
+}
+
+#names {
+    border-bottom: medium dashed green;
+    border-left: medium dashed green;
+    border-right: medium dashed green;
+    border-top: medium dashed green;
 }
 
 footer > p {
