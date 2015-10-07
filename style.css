@@ -1,3 +1,14 @@
+body {
+    counter-reset: section;
+    cursor: auto;
+    quotes: "„" "”";
+}
+
+h2::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
 @font-face {
     font-family: "Bitstream Vera Serif Bold";
     src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
@@ -116,6 +127,10 @@ nav ul a {
     padding-bottom: 10px;
 }
 
+#what > img {
+    object-position: 10px;
+}
+
 #fancyinfo {
     /*Pointless but we should use them all so...*/
     padding: 15px;
@@ -141,11 +156,14 @@ nav ul a {
 #fancyinfo > caption {
     color: darkred;
     font: italic small-caps 700 16px "Bitstream Vera Serif Bold";
+    caption-side: bottom;
 }
 
 table {
     border-collapse: separate;
     border-spacing: 2px;
+    empty-cells: hide;
+    table-layout: auto;
 }
 
 td {
@@ -200,6 +218,12 @@ td {
     display: none;
 }
 
+textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
+
 footer {
     background: padding-box aliceblue;
     position: relative;
@@ -212,6 +236,7 @@ footer > p {
     text-decoration: underline red;
     word-break: normal;
     word-spacing: -0.05em;
+    text-overflow: ellipsis;
 }
 
 .hidden {
@@ -224,6 +249,12 @@ u {
     -webkit-transform: rotateX(180deg);
     font-size: large;
     font-size-adjust: none;
+}
+
+s {
+    /* could also be separate outline-width outline-style outline-color */
+    outline: 1px dashed red;
+    outline-offset: 2px;
 }
 
 dialog {
