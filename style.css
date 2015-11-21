@@ -68,6 +68,7 @@ nav li {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 nav ul a {
     border-radius: 5px;
     padding: 8px 15px 9px 15px;
@@ -85,6 +86,7 @@ nav ul a {
     border-radius: 15px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 1%;
     min-height: 50%;
     background-color: antiquewhite;
 }
@@ -96,6 +98,7 @@ nav ul a {
     margin-left: 5%;
     text-indent: 0;
     white-space: nowrap;
+    column-count: 1;
 }
 
 #howcool {
@@ -107,7 +110,7 @@ nav ul a {
     padding-bottom: 30px;
 }
 
-#howcool > img {
+#howcool > div > img {
     display: block;
     margin: 0 auto;
 }
@@ -129,6 +132,7 @@ nav ul a {
 
 #what > img {
     object-position: 10px;
+    backface-visibility: hidden;
 }
 
 #fancyinfo {
@@ -164,6 +168,7 @@ table {
     border-spacing: 2px;
     empty-cells: hide;
     table-layout: auto;
+    column-width: 100px;
 }
 
 td {
@@ -181,6 +186,9 @@ td {
     list-style: circle inside;
     hyphens: auto;
     line-height: 1.4;
+    columns: 2;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #gallery {
@@ -201,6 +209,14 @@ td {
 #gallery > #gif {
     order: 1;
     align-self: auto;
+    bottom: auto;
+    transition-property: height;
+    transition-delay: 3s;
+    transition-duration: 4s;
+}
+
+#gallery > #gif:hover {
+    height: 200px;
 }
 
 #gallery > #wiki {
@@ -271,4 +287,45 @@ dialog {
     bottom: -120px;
     direction: rtl;
     unicode-bidi: bidi-override;
+}
+
+#animated-nokkloom {
+    animation-name: nokkloom;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes nokkloom {
+    from {background: red;}
+    to {background: blue;}
+}
+
+#perspective-box {
+    perspective: 200px;
+    perspective-origin: top;
+    transform-style: preserve-3d;
+    transition: perspective 2s;
+}
+
+#perspective-box:hover {
+    perspective: 400px;
+}
+
+#persp-1 {
+    transform-origin: bottom left;
+    transform: rotateY(40deg);
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+}
+
+#persp-2 {
+    transform-origin: top right;
+    transform: skewX(10deg) rotateX(-80deg);
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
 }
