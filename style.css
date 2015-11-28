@@ -89,6 +89,8 @@ nav ul a {
     padding-top: 1%;
     min-height: 50%;
     background-color: antiquewhite;
+    column-gap: normal;
+    column-rule: dotted;
 }
 
 #where {
@@ -247,12 +249,14 @@ footer {
 
 footer > p {
     text-transform: uppercase;
+    word-wrap: break-word; /* same as the next, just an alias */
     overflow-wrap: break-word;
     letter-spacing: -0.05em;
     text-decoration: underline red;
     word-break: normal;
     word-spacing: -0.05em;
     text-overflow: ellipsis;
+    font-feature-settings: "tnum";
 }
 
 .hidden {
@@ -287,6 +291,7 @@ dialog {
     bottom: -120px;
     direction: rtl;
     unicode-bidi: bidi-override;
+    z-index: -1;
 }
 
 #animated-nokkloom {
@@ -296,6 +301,11 @@ dialog {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     box-sizing: border-box;
+}
+
+@keyframes nokkloom {
+    from {background: red;}
+    to {background: blue;}
 }
 
 @-webkit-keyframes nokkloom {
